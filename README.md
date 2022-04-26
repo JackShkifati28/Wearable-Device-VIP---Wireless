@@ -5,21 +5,47 @@ This instruction is for the new incomings who will contribute to this project.
 ## Description
 
 This project serves for the wireless connection part for NYU VIP Team - Smart Wearable for TeleHealth.
-This project belongs to the Wireless Team in this VIP, there are two other teams which is the Software Team and the Hardware Team.
+This project belongs to the Wireless Team in this VIP. There are two other teams which is the Software Team and the Hardware Team.
 The Wireless Team functions as a bridge that converge the works that has been done from the two other teams.
 The goal of this project is to design a visual interface as well as extensive functionalities that supports the machine learning algorithms from Software Team to be applied on the wearable device designed by the Hardware Team.
 
 ## Getting Started
 
-### Dependencies
-
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
-
 ### Installing
+Before proceeding with this project, make sure you check the following prerequisites.
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+* Arduino IDE 
+    - We’ll program the ESP32/TinyPICO boards using Arduino IDE, so before proceeding with this tutorial, make sure you have the ESP32 board installed in your Arduino IDE. 
+    - Follow this tutorial for setting up ESP32 if you need: https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/
+    - The set up for TinyPICO Board on Arduino IDE is similar to the above. The only difference is you choose "TinyPICO" from Tools > Board. 
+    
+* ADXL345 Library
+    - Go to Sketch > Include Library > Manage Libraries, search for "SparkFun_ADXL345" and click install.
+    
+* Arduino_JSON Library
+    - Go to Sketch > Include Library > Manage Libraries, search for "Arduino_JSON" and click install.
+
+* Async Web Server Libraries
+    - To build the web server you need to install the following libraries:
+    - ESPAsyncWebServer: https://github.com/me-no-dev/ESPAsyncWebServer
+    - AsyncTCP: https://github.com/me-no-dev/AsyncTCP
+    - These two libraries aren’t available to install through the Arduino Library Manager, so you need to copy the library files to the Arduino Installation Libraries folder. Alternatively, in your Arduino IDE, you can go to Sketch > Include Library > Add .zip Library and select the libraries you’ve just downloaded.
+    
+
+### Parts Required
+    To follow this tutorial, you need one ESP32 board (as Receiver), one TinyPICO board (as Sender). You also need:
+        - 1x PCB Board
+        - 2x ~ 8x ADXL345 sensors
+        - 1x ~ 2x Wires with Micro-USB
+        - 1x Battery
+    
+
+### Getting the Receiver Board (ESP32) MAC Address
+    1. To send messages via ESP-NOW, you need to know the receiver board’s MAC address. Each board has a unique MAC address.
+    2. Upload the code file that's named as "findMacAddr" to your ESP32 receiver board to get its MAC address.
+    3. Always hold the 'BOOT' button located as the lower right corner on ESP32 when you are uploading codes to ESP32 board (No need to press anything while uploading codes to TinyPICO board).
+    4. After uploading the code, press the RST/EN button, and the MAC address should be displayed on the Serial Monitor. Eg. 0x30, 0xC6, 0xF7, 0x0B, 0x49, 0x24.
+    
 
 ### Executing program
 
