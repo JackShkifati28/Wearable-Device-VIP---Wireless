@@ -36,10 +36,10 @@ Before proceeding with this project, make sure you check the following prerequis
 
 ### Parts Required
 * To follow this tutorial, you need one ESP32 board (as Receiver), one TinyPICO board (as Sender). You also need:
-        - 1x PCB Board
-        - 2x ~ 8x ADXL345 sensors
-        - 1x ~ 2x Wires with Micro-USB
-        - 1x Battery
+    - 1x PCB Board
+    - 2x ~ 8x ADXL345 sensors
+    - 1x ~ 2x Wires with Micro-USB
+    - 1x Battery
     
 
 ### Getting the Receiver Board (ESP32) MAC Address
