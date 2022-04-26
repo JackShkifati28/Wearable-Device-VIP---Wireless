@@ -50,14 +50,14 @@ Before proceeding with this project, make sure you check the following prerequis
 
 
 ### ESP32 Receiver (ESP-NOW + WebServer)
-* The ESP32 receiver board receives the packets from the sender boards and hosts a web server to display the latest received readings.
-* Insert your network credentials on the following lines so that the ESP32 can connect to your local network.
-```
-const char* ssid = "REPLACE_WITH_YOUR_SSID";
-const char* password = "REPLACE_WITH_YOUR_PASSWORD";
-```
-* Upload the code file that's named as "Receiver" to your receiver board – the code is prepared to receive readings from the PCB board that is assembled with TinyPICO board and ADXL345 sensors.
-* Please refer to the tutorial [esp32-esp-now-wi-fi-web-server](https://randomnerdtutorials.com/esp32-esp-now-wi-fi-web-server/) here if you are not sure about the details in this code snippet. 
+1. The ESP32 receiver board receives the packets from the sender boards and hosts a web server to display the latest received readings.
+2. Insert your network credentials on the following lines so that the ESP32 can connect to your local network.
+    ```
+    const char* ssid = "REPLACE_WITH_YOUR_SSID";
+    const char* password = "REPLACE_WITH_YOUR_PASSWORD";
+    ```
+3. Upload the code file that's named as "Receiver" to your receiver board – the code is prepared to receive readings from the PCB board that is assembled with TinyPICO board and ADXL345 sensors.
+4. Please refer to the tutorial [esp32-esp-now-wi-fi-web-server](https://randomnerdtutorials.com/esp32-esp-now-wi-fi-web-server/) here if you are not sure about the details in this code snippet. 
 
 ## Help
 
