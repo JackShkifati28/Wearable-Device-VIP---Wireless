@@ -8,6 +8,8 @@ This project serves for the wireless connection part for NYU VIP Team - Smart We
 This project belongs to the Wireless Team in this VIP. There are two other teams which is the Software Team and the Hardware Team.
 The Wireless Team functions as a bridge that converge the works that has been done from the two other teams.
 The goal of this project is to design a visual interface as well as extensive functionalities that supports the machine learning algorithms from Software Team to be applied on the wearable device designed by the Hardware Team.
+In this project, we want to host an ESP32 web server and use ESP-NOW communication protocol at the same time. You can have several ESP32 boards sending sensor readings via ESP-NOW to one ESP32 receiver that displays all readings on a web server. The boards will be programmed using Arduino IDE.
+
 
 ## Getting Started
 
@@ -33,7 +35,7 @@ Before proceeding with this project, make sure you check the following prerequis
     
 
 ### Parts Required
-    To follow this tutorial, you need one ESP32 board (as Receiver), one TinyPICO board (as Sender). You also need:
+To follow this tutorial, you need one ESP32 board (as Receiver), one TinyPICO board (as Sender). You also need:
         - 1x PCB Board
         - 2x ~ 8x ADXL345 sensors
         - 1x ~ 2x Wires with Micro-USB
@@ -41,19 +43,21 @@ Before proceeding with this project, make sure you check the following prerequis
     
 
 ### Getting the Receiver Board (ESP32) MAC Address
-    1. To send messages via ESP-NOW, you need to know the receiver board’s MAC address. Each board has a unique MAC address.
-    2. Upload the code file that's named as "findMacAddr" to your ESP32 receiver board to get its MAC address.
-    3. Always hold the 'BOOT' button located as the lower right corner on ESP32 when you are uploading codes to ESP32 board (No need to press anything while uploading codes to TinyPICO board).
-    4. After uploading the code, press the RST/EN button, and the MAC address should be displayed on the Serial Monitor. Eg. 0x30, 0xC6, 0xF7, 0x0B, 0x49, 0x24.
-    
+1. To send messages via ESP-NOW, you need to know the receiver board’s MAC address. Each board has a unique MAC address.
+2. Upload the code file that's named as "findMacAddr" to your ESP32 receiver board to get its MAC address.
+3. Always hold the 'BOOT' button located as the lower right corner on ESP32 when you are uploading codes to ESP32 board (No need to press anything while uploading codes to TinyPICO board).
+4. After uploading the code, press the RST/EN button, and the MAC address should be displayed on the Serial Monitor. Eg. 0x30, 0xC6, 0xF7, 0x0B, 0x49, 0x24. FInd a notebook to take down this Mac address.
 
-### Executing program
 
-* How to run the program
-* Step-by-step bullets
+### ESP32 Receiver (ESP-NOW + WebServer)
+The ESP32 receiver board receives the packets from the sender boards and hosts a web server to display the latest received readings.
+Insert your network credentials on the following lines so that the ESP32 can connect to your local network.
 ```
-code blocks for commands
+const char* ssid = "REPLACE_WITH_YOUR_SSID";
+const char* password = "REPLACE_WITH_YOUR_PASSWORD";
 ```
+Upload the code file that's named as "Receiver" to your receiver board – the code is prepared to receive readings from the PCB board that is assembled with TinyPICO board and ADXL345 sensors.
+Please refer to the tutorial [esp32-esp-now-wi-fi-web-server](https://randomnerdtutorials.com/esp32-esp-now-wi-fi-web-server/) here if you are not sure about the details in this code snippet. 
 
 ## Help
 

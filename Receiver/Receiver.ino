@@ -14,8 +14,9 @@
 #include "ESPAsyncWebServer.h"
 #include <Arduino_JSON.h>
 
-const char* ssid = "";
-const char* password = "";
+// Replace with your network credentials (STATION)
+const char* ssid = "REPLACE_WITH_YOUR_SSID";
+const char* password = "REPLACE_WITH_YOUR_PASSWORD";
 
 // Structure example to receive data
 // Must match the sender structure
