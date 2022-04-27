@@ -61,7 +61,10 @@ Before proceeding with this project, make sure you check the following prerequis
 
 
 ### Assemble your PCB board
-<img  alt="Screen Shot 2022-04-26 at 8 26 15 PM" src="https://user-images.githubusercontent.com/46912813/165414280-6dcf3874-aabe-411f-be3a-a2e49bc9b484.png" width="400" height="350">
+* Make sure register names on ADXL345 line correctly with those on the PCB board.
+* When you plug in the batteries, remember that the black wire goes into Ground.
+* You should have setup similar to the image below when you finish.
+    <img  alt="Screen Shot 2022-04-26 at 8 26 15 PM" src="https://user-images.githubusercontent.com/46912813/165414280-6dcf3874-aabe-411f-be3a-a2e49bc9b484.png" width="400" height="350">
 
 
 
