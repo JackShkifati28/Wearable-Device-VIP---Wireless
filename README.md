@@ -57,6 +57,7 @@ Before proceeding with this project, make sure you check the following prerequis
     const char* password = "REPLACE_WITH_YOUR_PASSWORD";
     ```
 3. Upload the code file "Receiver" to your receiver board – the code is prepared to receive readings from the PCB board that is assembled with TinyPICO board and ADXL345 sensors. The ESP32 IP address should be printed on the Serial Monitor as well as the Wi-Fi channel.
+    <img width="672" alt="Screen Shot 2022-04-26 at 8 56 17 PM" src="https://user-images.githubusercontent.com/46912813/165416959-7784e304-8819-4cf6-a447-15f4637254b6.png">
 4. Please refer to the tutorial [esp32-esp-now-wi-fi-web-server](https://randomnerdtutorials.com/esp32-esp-now-wi-fi-web-server/) here if you are not sure about the details in this code snippet. 
 
 
@@ -76,7 +77,8 @@ Before proceeding with this project, make sure you check the following prerequis
      ```
     constexpr char WIFI_SSID[] = "REPLACE_WITH_YOUR_SSID";
     ```
-4. Upload the code file "Sender" to your sender board. You should notice that the boards change their Wi-Fi channel to the channel of the receiver board.
+4. Upload the code file "Sender" to your sender board. You should notice that the boards change their Wi-Fi channel to the channel of the receiver board.In our case, the boards changed their Wi-Fi channel number to 6.
+    
 5. Please refer to the tutorial [esp32-esp-now-wi-fi-web-server](https://randomnerdtutorials.com/esp32-esp-now-wi-fi-web-server/) here if you are not sure about the details in this code snippet.
 
 ## Help
