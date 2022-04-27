@@ -18,7 +18,7 @@ Before proceeding with this project, make sure you check the following prerequis
 
 * Arduino IDE 
     - We’ll program the ESP32/TinyPICO boards using Arduino IDE, so before proceeding with this tutorial, make sure you have the ESP32 board installed in your Arduino IDE. 
-    - Follow this tutorial for setting up ESP32 if you need: https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/
+    - Follow this tutorial for setting up ESP32 if you need: [Tutorial](https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/)
     - The set up for TinyPICO Board on Arduino IDE is similar to the above. The only difference is you choose "TinyPICO" from Tools > Board. 
     
 * ADXL345 Library
@@ -29,8 +29,8 @@ Before proceeding with this project, make sure you check the following prerequis
 
 * Async Web Server Libraries
     - To build the web server you need to install the following libraries:
-    - ESPAsyncWebServer: https://github.com/me-no-dev/ESPAsyncWebServer
-    - AsyncTCP: https://github.com/me-no-dev/AsyncTCP
+    - [ESPAsyncWebServer](https://github.com/me-no-dev/ESPAsyncWebServer)
+    - [AsyncTCP](https://github.com/me-no-dev/AsyncTCP)
     - These two libraries aren’t available to install through the Arduino Library Manager, so you need to copy the library files to the Arduino Installation Libraries folder. Alternatively, in your Arduino IDE, you can go to Sketch > Include Library > Add .zip Library and select the libraries you’ve just downloaded.
     
 
