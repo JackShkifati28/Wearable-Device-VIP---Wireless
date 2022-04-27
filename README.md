@@ -88,6 +88,8 @@ Before proceeding with this project, make sure you check the following prerequis
 ## Demonstration
 * After uploading the code to all the boards and if everything is going as expected, the ESP32 receiver board should start receiving sensor readings from the PCB board.
 * Open a browser on your local network and type the ESP32 IP address. You Should see something like this.
+    
+    <img  alt="Screen Shot 2022-04-26 at 9 15 03 PM" src="https://user-images.githubusercontent.com/46912813/165418680-959272cd-b6e5-48e6-a8ad-1e1d61bab154.png" width="760" height="450" >
 
     
 
