@@ -61,6 +61,8 @@ Before proceeding with this project, make sure you check the following prerequis
 
 
 ### Assemble your PCB board
+![IMG_1386](https://user-images.githubusercontent.com/46912813/165413517-0b5ee60c-7c2a-4434-aa18-af48a0915027.JPG)
+
 
 
 ## Help
