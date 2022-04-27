@@ -56,7 +56,7 @@ Before proceeding with this project, make sure you check the following prerequis
     const char* ssid = "REPLACE_WITH_YOUR_SSID";
     const char* password = "REPLACE_WITH_YOUR_PASSWORD";
     ```
-3. Upload the code file that's named as "Receiver" to your receiver board – the code is prepared to receive readings from the PCB board that is assembled with TinyPICO board and ADXL345 sensors.
+3. Upload the code file "Receiver" to your receiver board – the code is prepared to receive readings from the PCB board that is assembled with TinyPICO board and ADXL345 sensors. The ESP32 IP address should be printed on the Serial Monitor as well as the Wi-Fi channel.
 4. Please refer to the tutorial [esp32-esp-now-wi-fi-web-server](https://randomnerdtutorials.com/esp32-esp-now-wi-fi-web-server/) here if you are not sure about the details in this code snippet. 
 
 
@@ -64,11 +64,20 @@ Before proceeding with this project, make sure you check the following prerequis
 * Make sure register names on ADXL345 line correctly with those on the PCB board.
 * When you plug in the batteries, remember that the black wire goes into Ground.
 * You should have setup similar to the image below when you finish.
-    <img  alt="Screen Shot 2022-04-26 at 8 26 15 PM" src="https://user-images.githubusercontent.com/46912813/165414280-6dcf3874-aabe-411f-be3a-a2e49bc9b484.png" width="400" height="350">
+* <img  alt="Screen Shot 2022-04-26 at 8 26 15 PM" src="https://user-images.githubusercontent.com/46912813/165414280-6dcf3874-aabe-411f-be3a-a2e49bc9b484.png" width="400" height="350">
 
-
-
-
+### ESP32 Sender Code (ESP-NOW)
+1. The ESP32 sender board reads data from the ADXL345 (xVal, yVal, zVal) and wrap the readings into structure that then be sent to the ESP32 receiver board through ESP-NOW protocol.
+2. Insert the Mac Address of your receiver board that you've saved into this part.
+   ```
+   uint8_t broadcastAddress[] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF};
+    ```
+3. Insert your network credentials on the following lines so that the ESP32 can connect to your local network.
+     ```
+    constexpr char WIFI_SSID[] = "REPLACE_WITH_YOUR_SSID";
+    ```
+4. Upload the code file "Sender" to your sender board. You should notice that the boards change their Wi-Fi channel to the channel of the receiver board.
+5. Please refer to the tutorial [esp32-esp-now-wi-fi-web-server](https://randomnerdtutorials.com/esp32-esp-now-wi-fi-web-server/) here if you are not sure about the details in this code snippet.
 
 ## Help
 
