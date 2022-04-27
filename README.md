@@ -61,7 +61,7 @@ Before proceeding with this project, make sure you check the following prerequis
 
 
 ### Assemble your PCB board
-<img width="1159" alt="Screen Shot 2022-04-26 at 8 26 15 PM" src="https://user-images.githubusercontent.com/46912813/165414280-6dcf3874-aabe-411f-be3a-a2e49bc9b484.png" width="20" height="400">
+<img width="1159" alt="Screen Shot 2022-04-26 at 8 26 15 PM" src="https://user-images.githubusercontent.com/46912813/165414280-6dcf3874-aabe-411f-be3a-a2e49bc9b484.png" width="20" height="200">
 
 
 
