@@ -59,6 +59,10 @@ Before proceeding with this project, make sure you check the following prerequis
 3. Upload the code file that's named as "Receiver" to your receiver board – the code is prepared to receive readings from the PCB board that is assembled with TinyPICO board and ADXL345 sensors.
 4. Please refer to the tutorial [esp32-esp-now-wi-fi-web-server](https://randomnerdtutorials.com/esp32-esp-now-wi-fi-web-server/) here if you are not sure about the details in this code snippet. 
 
+
+### Assemble your PCB board
+
+
 ## Help
 
 Any advise for common problems or issues.
