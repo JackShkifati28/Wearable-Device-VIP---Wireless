@@ -4,7 +4,7 @@
   
   Permission is hereby granted, free of charge, to any person obtaining a copy
   of this software and associated documentation files.
-  
+ 
   The above copyright notice and this permission notice shall be included in all
   copies or substantial portions of the Software.
 *********/
@@ -14,7 +14,6 @@
 #include "ESPAsyncWebServer.h"
 #include <Arduino_JSON.h>
 
-// Replace with your network credentials (STATION)
 const char* ssid = "REPLACE_WITH_YOUR_SSID";
 const char* password = "REPLACE_WITH_YOUR_PASSWORD";
 

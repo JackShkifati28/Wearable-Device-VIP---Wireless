@@ -28,7 +28,7 @@
 
 
 // REPLACE WITH THE RECEIVER'S MAC Address
-uint8_t broadcastAddress[] = {0x30, 0xC6, 0xF7, 0x0B, 0x49, 0x24};
+uint8_t broadcastAddress[] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF};
 
 // Structure example to send data
 // Must match the receiver structure
@@ -59,7 +59,7 @@ const long interval = 1;        // Interval at which to publish sensor readings
 esp_now_peer_info_t peerInfo;
 
 //insert Wifi SSID
-constexpr char WIFI_SSID[] = "";
+constexpr char WIFI_SSID[] = "REPLACE_WITH_YOUR_SSID";
 
 
 int32_t getWiFiChannel(const char *ssid) {
