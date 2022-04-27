@@ -85,12 +85,10 @@ Before proceeding with this project, make sure you check the following prerequis
     
 5. Please refer to the tutorial [esp32-esp-now-wi-fi-web-server](https://randomnerdtutorials.com/esp32-esp-now-wi-fi-web-server/) here if you are not sure about the details in this code snippet.
 
-## Help
+## Demonstration
+* After uploading the code to all the boards and if everything is going as expected, the ESP32 receiver board should start receiving sensor readings from the PCB board.
+* Open a browser on your local network and type the ESP32 IP address. You Should see something like this.
 
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
 
 ## Authors
 
